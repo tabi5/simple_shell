@@ -200,7 +200,7 @@ int _unsetenv(var_info_t *, char *);
 int _setenv(var_info_t *, char *, char *);
 
 /* toem_history.c */
-char *get_history_file(var_info_it *info);
+char *get_history_file(var_info_t *info);
 int write_history(var_info_t *info);
 int read_history(var_info_t *info);
 int build_history_list(var_info_t *info, char *buf, int linecount);

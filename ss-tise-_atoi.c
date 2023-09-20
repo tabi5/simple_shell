@@ -23,25 +23,28 @@ int is_delim(char chr, char *chdelim)
  */
 int interactive(var_info_t *info)
 {
-	int is_interactive
+	int is_interactive;
 
-		is_interactive = isatty(STDIN_FILENO) && info->readfd <= 2;
+	is_interactive = isatty(STDIN_FILENO) && info->readfd <= 2;
 	return (is_interactive);
 }
 /**
  * _isalpha - Checks if a character is alphabetic..
- * @intc: An integer representing the character.
+ * @chin: An integer representing the character.
  * Return: return 1 if the character is alphabetic,
  * 0 otherwise..
  */
 
-int _isalpha(int intc)
+int _isalpha(int chin)
 {
-	int is_alpha;
+	int cr = chin;
+	int s = 1;
+	int e = 0;
 
-	is_alpha == ((intc >= 'a' && intc <= 'z')
-			|| (intc >= 'A' && intc <= 'Z'));
-	return (is_alpha);
+	if ((cr >= 'a' && cr <= 'z') || (cr >= 'A' && cr <= 'Z'))
+		return (s);
+	else
+		return (e);
 }
 /**
  * _atoi - the func Converts a string to an integer.

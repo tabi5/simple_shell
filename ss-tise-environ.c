@@ -8,10 +8,9 @@
  */
 int _myenv(var_info_t *info)
 {
-	int env_count;
 	int r = 0;
 
-	env_count = print_list_str(info->env);
+	print_list_str(info->env);
 	return (r);
 }
 /**
